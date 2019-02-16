@@ -1,13 +1,61 @@
 {
   "name": "ng-idle",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Provides a set of libraries for extending Angular functionality",
+  "keywords": [
+    "Angular",
+    "Library"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idlemachinery/ng-idle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/idlemachinery/ng-idle/issues"
+  },
+  "homepage": "https://github.com/idlemachinery/ng-idle#readme",
+  "author": "Andrew Miller <idlemachinery@gmail.com> (https://idlemachinery.com/)",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "v-patch": "npm version patch",
+    "v-minor": "npm version minor",
+    "v-major": "npm version major",
+
+    "build-common": "ng build common",
+    "copy-license-common": "copy .\\LICENSE .\\dist\\common",
+    "copy-readme-common": "copy .\\packages\\README.md .\\dist\\common",
+    "copy-files-common": "npm run copy-license-common && npm run copy-readme-common",
+    "npm-pack-common": "cd dist/common && npm pack",
+    "package-common": "npm run build-common && npm run copy-files-common && npm run npm-pack-common",
+    "v-patch-common": "cd packages/common && npm version patch",
+    "v-minor-common": "cd packages/common && npm version minor",
+    "v-major-common": "cd packages/common && npm version major",
+
+    "build-forms": "ng build forms",
+    "copy-license-forms": "copy .\\LICENSE .\\dist\\forms",
+    "copy-readme-forms": "copy .\\packages\\README.md .\\dist\\forms",
+    "copy-files-forms": "npm run copy-license-forms && npm run copy-readme-forms",
+    "npm-pack-forms": "cd dist/forms && npm pack",
+    "package-forms": "npm run build-forms && npm run copy-files-forms && npm run npm-pack-forms",
+    "v-patch-forms": "cd packages/forms && npm version patch",
+    "v-minor-forms": "cd packages/forms && npm version minor",
+    "v-major-forms": "cd packages/forms && npm version major",
+
+    "build-http": "ng build http",
+    "copy-license-http": "copy .\\LICENSE .\\dist\\http",
+    "copy-readme-http": "copy .\\packages\\README.md .\\dist\\http",
+    "copy-files-http": "npm run copy-license-http && npm run copy-readme-http",
+    "npm-pack-http": "cd dist/http && npm pack",
+    "package-http": "npm run build-http && npm run copy-files-http && npm run npm-pack-http",
+    "v-patch-http": "cd packages/http && npm version patch",
+    "v-minor-http": "cd packages/http && npm version minor",
+    "v-major-http": "cd packages/http && npm version major"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +67,7 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "bootstrap": "4.3.1",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
@@ -26,6 +75,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.12.0",
+    "@angular-devkit/build-ng-packagr": "~0.12.0",
     "@angular/cli": "~7.2.2",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
@@ -40,8 +90,11 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "ng-packagr": "^4.2.0",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
+    "tsickle": ">=0.34.0",
+    "tslib": "^1.9.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
   }

@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -123,6 +124,111 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "common": {
+      "root": "packages/common",
+      "sourceRoot": "packages/common/src",
+      "projectType": "library",
+      "prefix": "idle",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "packages/common/tsconfig.lib.json",
+            "project": "packages/common/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "packages/common/src/test.ts",
+            "tsConfig": "packages/common/tsconfig.spec.json",
+            "karmaConfig": "packages/common/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "packages/common/tsconfig.lib.json",
+              "packages/common/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "forms": {
+      "root": "packages/forms",
+      "sourceRoot": "packages/forms/src",
+      "projectType": "library",
+      "prefix": "idle",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "packages/forms/tsconfig.lib.json",
+            "project": "packages/forms/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "packages/forms/src/test.ts",
+            "tsConfig": "packages/forms/tsconfig.spec.json",
+            "karmaConfig": "packages/forms/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "packages/forms/tsconfig.lib.json",
+              "packages/forms/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "http": {
+      "root": "packages/http",
+      "sourceRoot": "packages/http/src",
+      "projectType": "library",
+      "prefix": "idle",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "packages/http/tsconfig.lib.json",
+            "project": "packages/http/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "packages/http/src/test.ts",
+            "tsConfig": "packages/http/tsconfig.spec.json",
+            "karmaConfig": "packages/http/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "packages/http/tsconfig.lib.json",
+              "packages/http/tsconfig.spec.json"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]

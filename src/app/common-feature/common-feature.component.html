@@ -1,0 +1,47 @@
+<h1>@ng-idle/common</h1>
+<p>commonly needed directives and services</p>
+<div class="table-responsive">
+  <table class="table table-hover table-striped">
+    <thead>
+      <th>Feature</th>
+      <th>Usage</th>
+      <th>Description</th>
+      <th>Example</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th>TrimPipe</th>
+        <td>
+          <code>
+            <span class="pun">{{</span><span class="pln"> value_expression </span><span class="pun">|</span><span class="kwd nocode"> trim </span><span class="pun">}}</span>
+          </code>
+        </td>
+        <td>Trims the specified string</td>
+        <td>
+          <b>without: </b><span class="trim-text">{{ sampleString }}</span><br/>
+          <b>with: </b><span class="trim-text">{{ sampleString | trim }}</span>
+        </td>
+      </tr>
+      <tr>
+        <th>CapitalizePipe</th>
+        <td>
+          <code>
+            <span class="pun">{{</span><span class="pln"> value_expression </span><span class="pun">|</span><span class="kwd nocode"> capitalize </span><span class="pun">}}</span>
+          </code>
+        </td>
+        <td>Capitalizes the first word in specified string</td>
+        <td>
+          <b>without: </b>{{ sampleString }}<br/>
+          <b>with: </b>{{ sampleString | capitalize }}
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">EnsureModuleLoadedOnceGuard</th>
+        <td colspan="2">
+          <div>Looks for the module in the parent injector to see if it's already been loaded.</div>
+          <div>Commonly extended from a core module.</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,24 @@
+{
+  "name": "@ng-idle/common",
+  "version": "0.1.0",
+  "description": "@ng-Idle - commonly needed directives and services",
+  "keywords": [
+    "Angular",
+    "Library",
+    "Common"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idlemachinery/ng-idle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/idlemachinery/ng-idle/issues"
+  },
+  "homepage": "https://github.com/idlemachinery/ng-idle#readme",
+  "author": "Andrew Miller <idlemachinery@gmail.com> (https://idlemachinery.com/)",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  }
+}

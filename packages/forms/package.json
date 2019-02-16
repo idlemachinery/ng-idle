@@ -1,0 +1,24 @@
+{
+  "name": "@ng-idle/forms",
+  "version": "0.0.1",
+  "description": "@ng-Idle - directives and services for creating forms",
+  "keywords": [
+    "Angular",
+    "Library",
+    "Forms"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idlemachinery/ng-idle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/idlemachinery/ng-idle/issues"
+  },
+  "homepage": "https://github.com/idlemachinery/ng-idle#readme",
+  "author": "Andrew Miller <idlemachinery@gmail.com> (https://idlemachinery.com/)",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  }
+}
