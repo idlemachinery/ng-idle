@@ -1,0 +1,56 @@
+<h1>@ng-idle/forms</h1>
+<p>directives and services for creating forms</p>
+
+<div class="table-responsive">
+  <table class="table table-hover table-striped">
+    <thead>
+      <th>Feature</th>
+      <th>Usage</th>
+      <th>Description</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th>AutofocusDirective</th>
+        <td>
+          <code>
+            <span class="pun">&lt;</span><span class="pln">input </span><span class="pun">[</span><span class="kwd nocode">autofocus</span><span class="pun">]</span><span class="pun"> /&gt;</span>
+          </code>
+        </td>
+        <td>Sets focus to the control</td>
+      </tr>
+      <tr>
+        <th>FormValidators.range</th>
+        <td>
+          <code>
+            <span class="pln">FormValidators.range</span><span class="pun">(</span><span class="kwd nocode">1</span><span class="pun">,</span><span class="kwd nocode">99</span><span class="pun">)</span>
+          </code>
+        </td>
+        <td>Validate the input is a number between the specified range</td>
+      </tr>
+      <tr>
+          <th>FormValidators.restrictedWords</th>
+          <td>
+            <code>
+              <span class="pln">FormValidators.restrictedWords</span><span class="pun">([</span><span class="kwd nocode">'foo'</span><span class="pun">,</span><span class="kwd nocode">'bar'</span><span class="pun">])</span>
+            </code>
+          </td>
+          <td>Validates the specified words aren't in the input value</td>
+        </tr>
+      <tr>
+        <th>ValidationForm</th>
+        <td colspan="2">
+          <div>An abstract class that provides easy validation for reactive forms. Set the validationMessages in the <i>constructor</i> and build the form in <i>ngOnInit</i>.</div>
+          <div>Check the code for an example and test out a demo below.</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr/>
+
+<div class="row">
+  <div class="col-md-6">
+    <idle-edit-form></idle-edit-form>
+  </div>
+</div>

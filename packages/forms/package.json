@@ -1,6 +1,6 @@
 {
   "name": "@ng-idle/forms",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "@ng-Idle - directives and services for creating forms",
   "keywords": [
     "Angular",
@@ -19,6 +19,8 @@
   "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/core": "^7.2.0",
+    "@angular/forms": "~7.2.0",
+    "rxjs": "~6.3.3"
   }
 }

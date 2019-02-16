@@ -8,9 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CommonFeatureComponent implements OnInit {
   sampleString = ' hello world ';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
