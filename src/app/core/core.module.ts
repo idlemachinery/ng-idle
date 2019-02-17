@@ -2,7 +2,7 @@ import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { EnsureModuleLoadedOnceGuard } from 'common';
+import { EnsureModuleLoadedOnceGuard } from 'ng-idle-common';
 
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { FooterComponent } from './footer/footer.component';

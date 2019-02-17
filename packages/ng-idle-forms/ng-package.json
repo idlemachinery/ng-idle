@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/http",
+  "dest": "../../dist/ng-idle-forms",
   "lib": {
     "entryFile": "src/public_api.ts"
   }

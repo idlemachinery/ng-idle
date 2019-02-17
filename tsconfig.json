@@ -19,23 +19,23 @@
       "dom"
     ],
     "paths": {
-      "common": [
-        "dist/common"
+      "ng-idle-common": [
+        "dist/ng-idle-common"
       ],
-      "common/*": [
-        "dist/common/*"
+      "ng-idle-common/*": [
+        "dist/ng-idle-common/*"
       ],
-      "forms": [
-        "dist/forms"
+      "ng-idle-forms": [
+        "dist/ng-idle-forms"
       ],
-      "forms/*": [
-        "dist/forms/*"
+      "ng-idle-forms/*": [
+        "dist/ng-idle-forms/*"
       ],
-      "http": [
-        "dist/http"
+      "ng-idle-http": [
+        "dist/ng-idle-http"
       ],
-      "http/*": [
-        "dist/http/*"
+      "ng-idle-http/*": [
+        "dist/ng-idle-http/*"
       ]
     }
   }

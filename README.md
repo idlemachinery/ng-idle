@@ -1,31 +1,46 @@
-# @ng-idle
+# ng-idle
 
 [![GitHub version](https://badge.fury.io/gh/idlemachinery%2Fng-idle.svg)](https://badge.fury.io/gh/idlemachinery%2Fng-idle)
 
 Custom libraries that provided extended functionality to [Angular](https://angular.io). I have included some common code that I have gathered throughout the [Pluralsight](https://app.pluralsight.com/paths/skill/angular) Angular skill learning path. It is still in pre-release as I have some cleanup and documentation to do.  My final goal is to release the libraries on [npm](https://npmjs.com).
 
+The main application contains examples and is on [StackBlitz](https://ng-idle.stackblitz.io).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
-## Features
+## Libraries
+
+### ng-idle-common
+
+Commonly needed directives and services
 
 * Capitalize and Trim pipes
-* Autofocus directive
 * EnsureModuleLoadedOnceGuard for core & other modules
+
+### ng-idle-forms
+
+Directives and services for creating forms
+
+* Autofocus directive
 * FormValidators including range and restrictedWords
 * GenericValidator class for Reactive Forms
 * ValidationForm that implements GenericValidator and can be extended
-* Tester application with examples
+* IdleFormsModule & IdleReactiveFormsModule export FormModule & ReactiveFormsModule respectively
+
+### ng-idle-http
+
+* AddHeaderInterceptor & AddXmlHeaderInterceptor for adding application Content-Type to the headers of http calls
+* GenericDataService is an abstract class that provides get/post/put/delete functionality for generic types
 
 ## Outstanding items
 
-* @ng-idle/http library
 * Code comments & documentation
 * Unit tests for all features
 
 ## Possible future enhancements
 
 * Directives for the validation functions so they can be used in template-driven forms
-* Http Interceptors for logging, caching & adding content headers
+* Http Interceptors for logging & caching
 * Extensible logging service
 
 ## Running the example application
@@ -34,4 +49,4 @@ Run `ng serve` or `npm start` for a dev server. Navigate to `http://localhost:42
 
 ## Running unit tests
 
-Run `ng test` or `ng test common` or `ng test forms` or `ng test http` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` or `ng test ng-idle-common` or `ng test ng-idle-forms` or `ng test ng-idle-http` to execute the unit tests via [Karma](https://karma-runner.github.io).

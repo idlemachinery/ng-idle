@@ -1,11 +1,11 @@
 {
-  "name": "http",
-  "version": "0.0.1",
-  "description": "@ng-Idle - the http service",
+  "name": "ng-idle-common",
+  "version": "1.0.0",
+  "description": "ng-idle - commonly needed directives and services",
   "keywords": [
     "Angular",
     "Library",
-    "Http"
+    "Common"
   ],
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   "homepage": "https://github.com/idlemachinery/ng-idle#readme",
   "author": "Andrew Miller <idlemachinery@gmail.com> (https://idlemachinery.com/)",
   "license": "MIT",
+  "private": false,
   "peerDependencies": {
     "@angular/common": "^7.2.0",
     "@angular/core": "^7.2.0"

@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
-import { ValidationForm, FormValidators } from 'forms';
+import { ValidationForm, FormValidators } from 'ng-idle-forms';
 
 import { Item } from '../../shared/interfaces';
 
@@ -29,7 +29,7 @@ export class EditFormComponent extends ValidationForm implements OnInit, AfterVi
       },
       price: {
         required: 'Price is required',
-        range: 'Price must be between 1 and 99'
+        range: 'Price must be between 1 and 1000'
       },
       description: {
         required: 'Description is required',
@@ -50,7 +50,7 @@ export class EditFormComponent extends ValidationForm implements OnInit, AfterVi
       ]],
       price: ['', [
         Validators.required,
-        FormValidators.range(1, 99)
+        FormValidators.range(1, 1000)
       ]],
       description: ['', [
         Validators.required,
