@@ -1,6 +1,6 @@
 # ng-idle
 
-[![GitHub version](https://badge.fury.io/gh/idlemachinery%2Fng-idle.svg)](https://badge.fury.io/gh/idlemachinery%2Fng-idle)
+[![GitHub version](https://badge.fury.io/gh/idlemachinery%2Fng-idle.svg)](https://badge.fury.io/gh/idlemachinery%2Fng-idle) ![](https://img.shields.io/twitter/follow/idlemachinery.svg?label=Follow&style=social)
 
 Custom libraries that provided extended functionality to [Angular](https://angular.io). I have included some common code that I have gathered throughout the [Pluralsight](https://app.pluralsight.com/paths/skill/angular) Angular skill learning path. It is still in pre-release as I have some cleanup and documentation to do.  My final goal is to release the libraries on [npm](https://npmjs.com).
 
@@ -28,6 +28,8 @@ Directives and services for creating forms
 * IdleFormsModule & IdleReactiveFormsModule export FormModule & ReactiveFormsModule respectively
 
 ### ng-idle-http
+
+The http service
 
 * AddHeaderInterceptor & AddXmlHeaderInterceptor for adding application Content-Type to the headers of http calls
 * GenericDataService is an abstract class that provides get/post/put/delete functionality for generic types

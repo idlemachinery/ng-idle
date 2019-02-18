@@ -34,7 +34,7 @@ export abstract class GenericDataService<T> {
       );
   }
 
-  insert(item: T): Observable<T> {
+  create(item: T): Observable<T> {
     return this.http.post<T>(this.apiUrl, item)
       .pipe(
         tap(data => {

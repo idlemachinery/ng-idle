@@ -1,7 +1,7 @@
-<div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+<div class="navbar navbar-expand fixed-top navbar-dark bg-primary">
   <div class="container">
     <a class="navbar-brand" [routerLink]="['/']">
-      @ng-idle
+      ng-idle
     </a>
     <button class="navbar-toggler" type="button" (click)="navbarCollapsed=!navbarCollapsed" [attr.aria-expanded]="!navbarCollapsed" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -21,6 +21,9 @@
         </li>
         <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
           <a class="nav-item nav-link" [routerLink]="['/http']">Http</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-item nav-link" [routerLink]="['/products']">Demo</a>
         </li>
       </ul>
     </div>

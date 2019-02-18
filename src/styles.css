@@ -30,3 +30,24 @@ body {
 .kwd {
   color: #00f;
 }
+
+.has-danger input,
+.has-danger textarea {
+  background-color: #e3c3c5;
+}
+
+.has-danger ::-webkit-input-placeholder {
+  color: #999;
+}
+
+.has-danger ::-moz-placeholder {
+  color: #999;
+}
+
+.has-danger :-moz-placeholder {
+  color: #999;
+}
+
+.has-danger :ms-input-placeholder {
+  color: #999;
+}

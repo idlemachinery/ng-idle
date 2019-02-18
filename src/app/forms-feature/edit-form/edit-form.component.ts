@@ -3,7 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 
 import { ValidationForm, FormValidators } from 'ng-idle-forms';
 
-import { Item } from '../../shared/interfaces';
+import { IProduct } from 'src/app/shared/interfaces';
 
 @Component({
   selector: 'idle-edit-form',
@@ -12,7 +12,7 @@ import { Item } from '../../shared/interfaces';
 })
 export class EditFormComponent extends ValidationForm implements OnInit, AfterViewInit {
   pageTitle = 'ValidationForm Example';
-  item: Item;
+  product: IProduct;
   get description() {
     // access the base FormGroup using this.form
     return this.form.get('description');
@@ -67,7 +67,7 @@ export class EditFormComponent extends ValidationForm implements OnInit, AfterVi
   }
 
   save() {
-    const i = { ...this.item, ...this.form.value };
+    const i = { ...this.product, ...this.form.value };
     alert(`Item saved with values:\n${JSON.stringify(i)}`);
   }
 
