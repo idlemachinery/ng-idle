@@ -4,7 +4,7 @@
 
 Custom libraries that provided extended functionality to [Angular](https://angular.io). I have included some common code that I have gathered throughout the [Pluralsight](https://app.pluralsight.com/paths/skill/angular) Angular skill learning path.
 
-The main application contains examples and is on [StackBlitz](https://bnmixvmm.github.stackblitz.io/).
+The main application contains examples and is on [StackBlitz](https://stackblitz.com/github/idlemachinery/ng-idle). Click 'Install Missing Packages' and 'Install Missing Dependencies' to get it running.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
