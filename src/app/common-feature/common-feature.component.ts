@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./common-feature.component.css']
 })
 export class CommonFeatureComponent implements OnInit {
-  sampleString = ' hello world ';
+  sampleString = 'hello world ';
 
   constructor() {}
 

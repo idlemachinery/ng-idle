@@ -2,9 +2,9 @@
 
 [![GitHub version](https://badge.fury.io/gh/idlemachinery%2Fng-idle.svg)](https://badge.fury.io/gh/idlemachinery%2Fng-idle) ![](https://img.shields.io/twitter/follow/idlemachinery.svg?label=Follow&style=social)
 
-Custom libraries that provided extended functionality to [Angular](https://angular.io). I have included some common code that I have gathered throughout the [Pluralsight](https://app.pluralsight.com/paths/skill/angular) Angular skill learning path. It is still in pre-release as I have some cleanup and documentation to do.  My final goal is to release the libraries on [npm](https://npmjs.com).
+Custom libraries that provided extended functionality to [Angular](https://angular.io). I have included some common code that I have gathered throughout the [Pluralsight](https://app.pluralsight.com/paths/skill/angular) Angular skill learning path.
 
-The main application contains examples and is on [StackBlitz](https://ng-idle.stackblitz.io).
+The main application contains examples and is on [StackBlitz](https://bnmixvmm.github.stackblitz.io/).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
@@ -12,12 +12,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### ng-idle-common
 
+![](https://img.shields.io/npm/v/ng-idle-common.svg?style=flat) [npmjs](https://www.npmjs.com/package/ng-idle-common)
+
 Commonly needed directives and services
 
 * Capitalize and Trim pipes
 * EnsureModuleLoadedOnceGuard for core & other modules
 
 ### ng-idle-forms
+
+![](https://img.shields.io/npm/v/ng-idle-forms.svg?style=flat) [npmjs](https://www.npmjs.com/package/ng-idle-forms)
 
 Directives and services for creating forms
 
@@ -28,6 +32,8 @@ Directives and services for creating forms
 * IdleFormsModule & IdleReactiveFormsModule export FormModule & ReactiveFormsModule respectively
 
 ### ng-idle-http
+
+![](https://img.shields.io/npm/v/ng-idle-http.svg?style=flat) [npmjs](https://www.npmjs.com/package/ng-idle-http)
 
 The http service
 
